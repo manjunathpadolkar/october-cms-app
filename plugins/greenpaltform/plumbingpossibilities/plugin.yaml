@@ -1,0 +1,6 @@
+plugin:
+    name: 'greenpaltform.plumbingpossibilities::lang.plugin.name'
+    description: 'greenpaltform.plumbingpossibilities::lang.plugin.description'
+    author: 'Green Paltform'
+    icon: oc-icon-gear
+    homepage: ''

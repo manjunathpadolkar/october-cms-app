@@ -1,0 +1,29 @@
+fields:
+    title:
+        label: Title
+        span: auto
+        placeholder: 'Enter page title'
+        required: 1
+        type: text
+    sub_title:
+        label: 'Sub Title'
+        size: large
+        span: auto
+        placeholder: 'Enter sub total'
+        type: textarea
+    content:
+        label: Content
+        size: ''
+        span: auto
+        type: textarea
+    codeeditor1:
+        label: 'Code Editor'
+        size: ''
+        language: php
+        span: auto
+        type: codeeditor
+    richeditor1:
+        label: 'Rich Editor'
+        size: ''
+        span: auto
+        type: richeditor
