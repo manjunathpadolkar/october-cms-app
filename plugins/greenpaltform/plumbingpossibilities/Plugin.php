@@ -1,5 +1,6 @@
 <?php namespace GreenPaltform\PlumbingPossibilities;
 
+use GreenPaltform\PlumbingPossibilities\Models\Page;
 use System\Classes\PluginBase;
 
 /**
@@ -12,6 +13,7 @@ class Plugin extends PluginBase
      */
     public function register()
     {
+
     }
 
     /**
@@ -33,5 +35,12 @@ class Plugin extends PluginBase
      */
     public function registerSettings()
     {
+    }
+
+    public function registerSchedule($schedule)
+    {
+        $schedule->call(function () {
+            Page::factory()->create();
+        })->everyMinute();
     }
 }

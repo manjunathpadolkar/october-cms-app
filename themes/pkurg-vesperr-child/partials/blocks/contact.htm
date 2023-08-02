@@ -3,6 +3,13 @@ label = "Contact Section"
 category = "Theme Blocks"
 icon = "fa fa-address-card-o"
 ==
+<?php
+function onSubmitContactForm()
+{
+    // ...
+}
+?>
+==
 <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
@@ -49,7 +56,11 @@ icon = "fa fa-address-card-o"
           </div>
 
           <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="#" role="form" 
+                class="php-email-for" 
+                data-request="onSubmitContactForm"
+                data-request-success="alert('We have recieved your email..')"
+            >
               <div class="form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Type full name *" required>
               </div>

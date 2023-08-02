@@ -1,0 +1,10 @@
+name: Pages
+modelClass: GreenPaltform\PlumbingPossibilities\Models\Page
+form: $/greenpaltform/plumbingpossibilities/models/page/fields.yaml
+defaultRedirect: greenpaltform/plumbingpossibilities/pages
+create:
+    redirect: 'greenpaltform/plumbingpossibilities/pages/update/:id'
+    redirectClose: greenpaltform/plumbingpossibilities/pages
+update:
+    redirect: greenpaltform/plumbingpossibilities/pages
+    redirectClose: greenpaltform/plumbingpossibilities/pages

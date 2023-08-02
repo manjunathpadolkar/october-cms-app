@@ -1,6 +1,7 @@
 <?php return [
     'plugin' => [
         'name' => 'Plumbing Possibilities',
-        'description' => ''
-    ]
+        'description' => '',
+    ],
+    'manage_pages' => 'Manage Pages',
 ];

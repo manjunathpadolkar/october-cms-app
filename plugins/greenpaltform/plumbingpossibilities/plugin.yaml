@@ -4,3 +4,12 @@ plugin:
     author: 'Green Paltform'
     icon: oc-icon-gear
     homepage: ''
+navigation:
+    pages:
+        label: 'greenpaltform.plumbingpossibilities::lang.manage_pages'
+        url: greenpaltform/plumbingpossibilities/pages
+        icon: icon-cog
+permissions:
+    plumbing_possibilies.manage_pages:
+        tab: 'greenpaltform.plumbingpossibilities::lang.manage_pages'
+        label: 'greenpaltform.plumbingpossibilities::lang.manage_pages'

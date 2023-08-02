@@ -12,3 +12,6 @@ v1.0.4:
 v1.0.5:
     - 'Updated table greenpaltform_plumbingpossibilities_pages'
     - builder_table_update_greenpaltform_plumbingpossibilities_pages.php
+v1.0.6:
+    - 'Updated table greenpaltform_plumbingpossibilities_pages'
+    - builder_table_update_greenpaltform_plumbingpossibilities_pages_2.php
