@@ -2,6 +2,41 @@ url = "/"
 layout = "default"
 title = "index"
 ==
+<?php
+function onSubmitContactForm()
+{
+    try{
+        $data = [
+            "name" => post("name"),
+            "phone" => post("phone"),
+            "email" => post("email"),
+            "subject" => post("subject"),
+            "msg" => post("message")
+        ];
+        $this->sendThankYouEmail($data);
+        $this->sendContactUsFormSubmittedEmail($data);     
+        Flash::success("Thanks for contacting us! We will be in touch with you shortly.");
+    }catch(Exception $exception){
+        print_r("test");
+        Flash::error('Something went wrong...');
+    }
+}
+
+
+function sendThankYouEmail($data){
+    Mail::send("contact::mail.thank-you", $data, function($message) use($data){
+        $message->to($data["email"], $data["name"]);
+    });
+
+}
+
+function sendContactUsFormSubmittedEmail($data){
+    Mail::send("contact::mail.submitted-to-admin", $data, function($message){
+        $message->to("homesh3007@gmail.com", "Admin");
+    });
+}
+?>
+==
 <!-- ======= Header ======= -->
   {% partial "blocks/header" %}
   <!-- End Header -->
