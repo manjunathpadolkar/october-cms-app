@@ -5,6 +5,14 @@ title = "index"
 <?php
 function onSubmitContactForm()
 {
+    $data = Request::validate([
+        'name' => 'required',
+        'phone' => 'required',
+        'email' => 'required|email',
+        'subject' => 'required',
+        'message' => 'required',
+    ]);
+
     try{
         $data = [
             "name" => post("name"),
@@ -14,10 +22,10 @@ function onSubmitContactForm()
             "msg" => post("message")
         ];
         $this->sendThankYouEmail($data);
-        $this->sendContactUsFormSubmittedEmail($data);     
+        //After adding email in sendContactUsFormSubmittedEmail function uncomment
+        // $this->sendContactUsFormSubmittedEmail($data);   
         Flash::success("Thanks for contacting us! We will be in touch with you shortly.");
     }catch(Exception $exception){
-        print_r("test");
         Flash::error('Something went wrong...');
     }
 }
@@ -32,7 +40,7 @@ function sendThankYouEmail($data){
 
 function sendContactUsFormSubmittedEmail($data){
     Mail::send("contact::mail.submitted-to-admin", $data, function($message){
-        $message->to("homesh3007@gmail.com", "Admin");
+        $message->to("enter email here", "Admin");
     });
 }
 ?>
