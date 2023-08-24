@@ -1,0 +1,42 @@
+fields:
+    date:
+        label: 'Select Date'
+        mode: date
+        span: auto
+        required: 1
+        type: datepicker
+    time:
+        label: 'Select Time'
+        mode: time
+        span: auto
+        required: 1
+        type: datepicker
+    client_id:
+        label: 'Select Client'
+        showSearch: true
+        span: auto
+        required: 1
+        emptyOption: 'Select client'
+        type: dropdown
+    assignee_id:
+        label: 'Select Assignee'
+        emptyOption: 'Select assignee'
+        showSearch: true
+        span: auto
+        required: 0
+        type: dropdown
+    status:
+        label: Status
+        options:
+            Pending: Pending
+            Confirmed: Confirmed
+            Assigned: Assigned
+            Cancelled: Cancelled
+            Hold: Hold
+            Visited: Visited
+            Completed: Completed
+        showSearch: true
+        span: auto
+        required: 1
+        emptyOption: 'Select status'
+        type: dropdown

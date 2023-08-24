@@ -1,6 +1,6 @@
 <div data-control="toolbar">
     <a
-        href="<?= Backend::url('greenpaltform/plumbingpossibilities/pages/create') ?>"
+        href="<?= Backend::url('greenpaltform/plumbingpossibilities/appointments/create') ?>"
         class="btn btn-primary oc-icon-plus">
         <?= e(trans('backend::lang.form.create')) ?>
     </a>

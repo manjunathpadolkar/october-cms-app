@@ -1,0 +1,10 @@
+name: Clients
+form: $/greenpaltform/plumbingpossibilities/models/client/fields.yaml
+modelClass: GreenPaltform\PlumbingPossibilities\Models\Client
+defaultRedirect: greenpaltform/plumbingpossibilities/clients
+create:
+    redirect: 'greenpaltform/plumbingpossibilities/clients/update/:id'
+    redirectClose: greenpaltform/plumbingpossibilities/clients
+update:
+    redirect: greenpaltform/plumbingpossibilities/clients
+    redirectClose: greenpaltform/plumbingpossibilities/clients

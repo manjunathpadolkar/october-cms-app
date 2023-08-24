@@ -1,0 +1,43 @@
+columns:
+    id:
+        label: ID
+        type: number
+        searchable: true
+        sortable: true
+    date:
+        label: 'Appointment Date'
+        type: date
+        searchable: true
+        sortable: true
+    time:
+        label: 'Appointment Time'
+        type: time
+        searchable: true
+        sortable: true
+    client:
+        label: Client
+        type: text
+        displayFrom: client_name
+        searchable: false
+        sortable: false
+    assignee:
+        label: Assignee
+        type: text
+        displayFrom: assignee_full_name
+        searchable: false
+        sortable: false
+    status:
+        label: Status
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'Creation Date'
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: 'Updataion Date'
+        type: datetime
+        searchable: true
+        sortable: true

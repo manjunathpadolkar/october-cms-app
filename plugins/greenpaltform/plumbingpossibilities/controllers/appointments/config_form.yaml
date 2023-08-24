@@ -1,0 +1,10 @@
+name: Appointments
+form: $/greenpaltform/plumbingpossibilities/models/appointment/fields.yaml
+modelClass: GreenPaltform\PlumbingPossibilities\Models\Appointment
+defaultRedirect: greenpaltform/plumbingpossibilities/appointments
+create:
+    redirect: 'greenpaltform/plumbingpossibilities/appointments/update/:id'
+    redirectClose: greenpaltform/plumbingpossibilities/appointments
+update:
+    redirect: greenpaltform/plumbingpossibilities/appointments
+    redirectClose: greenpaltform/plumbingpossibilities/appointments
