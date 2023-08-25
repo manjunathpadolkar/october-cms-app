@@ -1,0 +1,59 @@
+columns:
+    id:
+        label: ID
+        type: number
+        searchable: true
+        invisible: false
+        sortable: true
+    client:
+        label: Client
+        type: text
+        relation: client
+        valueFrom: name
+    address_1:
+        label: 'Address 1'
+        type: text
+        searchable: true
+        sortable: true
+    address_2:
+        label: 'Address 2'
+        type: text
+        searchable: true
+        sortable: true
+    city:
+        label: City
+        type: text
+        searchable: true
+        sortable: true
+    postal:
+        label: 'Postal Code'
+        type: text
+        searchable: true
+        sortable: true
+    province:
+        label: Province
+        type: text
+        relation: province
+        valueFrom: name
+    country:
+        label: Country
+        type: text
+        searchable: false
+        sortable: false
+        relation: country
+        valueFrom: name
+    phone:
+        label: 'Phone Number'
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'Creation Date'
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: 'Updatation Code'
+        type: datetime
+        searchable: true
+        sortable: true

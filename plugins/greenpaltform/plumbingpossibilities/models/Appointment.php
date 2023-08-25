@@ -26,7 +26,8 @@ class Appointment extends Model
 
     public $belongsTo = [
         "client" => Client::class,
-        "assignee" => User::class
+        "assignee" => User::class,
+        "address" => Address::class
     ];
 
     public function getClientIdOptions()
@@ -47,6 +48,23 @@ class Appointment extends Model
     public function getClientNameAttribute()
     {
         return $this->client->name ?? "";
+    }
+
+    public function getAddressIdOptions()
+    {
+        $fullAddressQuery = "CONCAT(address_1, ', ', address_2, ', ', city, ', ', province.name, ', ', country.name, ' - ',postal) as full_address";
+        return Address::where("client_id", $this->client_id)->leftJoin(Country::TABLE . " as country", "country.id", Address::TABLE . ".country_id")
+            ->leftJoin(Province::TABLE . " as province", "province.id", Address::TABLE . ".province_id")
+            ->get([
+                Address::TABLE . ".id",
+                "address_1",
+                "address_2",
+                "city",
+                "postal",
+                "country.name",
+                "province.name",
+                DB::raw($fullAddressQuery)
+            ])->lists("full_address", "id");
     }
 
 

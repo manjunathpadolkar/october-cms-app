@@ -1,0 +1,11 @@
+name: Addresses
+modelClass: GreenPaltform\PlumbingPossibilities\Models\Address
+form: $/greenpaltform/plumbingpossibilities/models/address/fields.yaml
+defaultRedirect: greenpaltform/plumbingpossibilities/addresses
+create:
+    redirect: 'greenpaltform/plumbingpossibilities/addresses/update/:id'
+    redirectClose: greenpaltform/plumbingpossibilities/addresses
+update:
+    redirect: greenpaltform/plumbingpossibilities/addresses
+    redirectClose: greenpaltform/plumbingpossibilities/addresses
+preview: {  }

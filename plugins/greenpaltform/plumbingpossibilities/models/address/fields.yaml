@@ -1,0 +1,46 @@
+fields:
+    client_id:
+        label: 'Select Client'
+        showSearch: true
+        span: auto
+        required: 1
+        emptyOption: 'Select client'
+        type: dropdown
+    address_1:
+        label: 'Enter Address 1'
+        span: auto
+        required: 1
+        type: text
+    address_2:
+        label: 'Enter Address 2'
+        span: auto
+        type: text
+    city:
+        label: City
+        span: auto
+        required: 1
+        type: text
+    postal:
+        label: 'Enter Postal Code'
+        span: auto
+        required: 1
+        type: text
+    country_id:
+        label: 'Select Country'
+        emptyOption: 'Select country'
+        showSearch: true
+        span: auto
+        required: 1
+        type: dropdown
+    province_id:
+        label: 'Select Province'
+        emptyOption: 'Select province'
+        showSearch: true
+        span: auto
+        dependsOn:
+            - country_id
+        type: dropdown
+    phone:
+        label: 'Enter Phone Number'
+        span: auto
+        type: text

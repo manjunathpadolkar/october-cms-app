@@ -57,3 +57,21 @@ v1.0.19:
 v1.0.20:
     - 'Updated table greenpaltform_plumbingpossibilities_appointments'
     - builder_table_update_greenpaltform_plumbingpossibilities_appointments_8.php
+v1.0.21:
+    - 'Updated table greenpaltform_plumbingpossibilities_appointments'
+    - builder_table_update_greenpaltform_plumbingpossibilities_appointments_9.php
+v1.0.22:
+    - 'Updated table greenpaltform_plumbingpossibilities_appointments'
+    - builder_table_update_greenpaltform_plumbingpossibilities_appointments_10.php
+v1.0.23:
+    - 'Created table greenpaltform_plumbingpossibilities_countries'
+    - builder_table_create_greenpaltform_plumbingpossibilities_countries.php
+v1.0.24:
+    - 'Created table greenpaltform_plumbingpossibilities_provinces'
+    - builder_table_create_greenpaltform_plumbingpossibilities_provinces.php
+v1.0.25:
+    - 'Created table greenpaltform_plumbingpossibilities_addresses'
+    - builder_table_create_greenpaltform_plumbingpossibilities_addresses.php
+v1.0.26:
+    - 'Updated table greenpaltform_plumbingpossibilities_appointments'
+    - builder_table_update_greenpaltform_plumbingpossibilities_appointments_11.php

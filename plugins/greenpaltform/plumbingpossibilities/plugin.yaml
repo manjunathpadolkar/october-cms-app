@@ -13,3 +13,7 @@ navigation:
         label: Clients
         url: greenpaltform/plumbingpossibilities/clients
         icon: icon-users
+    addresses:
+        label: Addresses
+        url: greenpaltform/plumbingpossibilities/addresses
+        icon: icon-home

@@ -4,14 +4,9 @@ columns:
         type: number
         searchable: true
         sortable: true
-    date:
+    date_time:
         label: 'Appointment Date'
-        type: date
-        searchable: true
-        sortable: true
-    time:
-        label: 'Appointment Time'
-        type: time
+        type: datetime
         searchable: true
         sortable: true
     client:
