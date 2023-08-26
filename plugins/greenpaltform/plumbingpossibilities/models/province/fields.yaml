@@ -1,0 +1,18 @@
+fields:
+    name:
+        label: 'Enter Name'
+        span: auto
+        required: 1
+        type: text
+    country_id:
+        label: 'Select Country'
+        showSearch: true
+        span: auto
+        required: 1
+        type: dropdown
+        emptyOption: 'Select country'
+    tax_percentage:
+        label: 'Enter Tax Percentage'
+        span: auto
+        default: '0'
+        type: number

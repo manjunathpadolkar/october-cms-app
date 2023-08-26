@@ -1,0 +1,23 @@
+columns:
+    id:
+        label: ID
+        type: number
+        searchable: true
+        sortable: true
+    country:
+        label: Country
+        type: text
+        searchable: false
+        sortable: false
+        relation: country
+        valueFrom: name
+    created_at:
+        label: 'Creation Date'
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: 'Updation Date'
+        type: datetime
+        searchable: true
+        sortable: true

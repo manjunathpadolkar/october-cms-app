@@ -1,0 +1,10 @@
+name: Settings
+form: $/greenpaltform/plumbingpossibilities/models/settings/fields.yaml
+modelClass: GreenPaltform\PlumbingPossibilities\Models\Settings
+defaultRedirect: greenpaltform/plumbingpossibilities/settings
+create:
+    redirect: 'greenpaltform/plumbingpossibilities/settings/update/:id'
+    redirectClose: greenpaltform/plumbingpossibilities/settings
+update:
+    redirect: greenpaltform/plumbingpossibilities/settings
+    redirectClose: greenpaltform/plumbingpossibilities/settings

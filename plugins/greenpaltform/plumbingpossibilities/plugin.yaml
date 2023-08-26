@@ -17,3 +17,11 @@ navigation:
         label: Addresses
         url: greenpaltform/plumbingpossibilities/addresses
         icon: icon-home
+    provinces:
+        label: Provinces
+        url: greenpaltform/plumbingpossibilities/provinces
+        icon: icon-location-arrow
+    manage-settings:
+        label: 'Manage Settings'
+        url: greenpaltform/plumbingpossibilities/settings
+        icon: icon-cogs

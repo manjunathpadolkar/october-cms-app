@@ -1,0 +1,10 @@
+name: Provinces
+form: $/greenpaltform/plumbingpossibilities/models/province/fields.yaml
+modelClass: GreenPaltform\PlumbingPossibilities\Models\Province
+defaultRedirect: greenpaltform/plumbingpossibilities/provinces
+create:
+    redirect: 'greenpaltform/plumbingpossibilities/provinces/update/:id'
+    redirectClose: greenpaltform/plumbingpossibilities/provinces
+update:
+    redirect: greenpaltform/plumbingpossibilities/provinces
+    redirectClose: greenpaltform/plumbingpossibilities/provinces

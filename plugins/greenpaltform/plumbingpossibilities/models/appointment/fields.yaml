@@ -5,6 +5,14 @@ fields:
         span: auto
         required: 1
         type: datepicker
+    timezone:
+        label: 'Select Timezone'
+        emptyOption: 'Select timezone'
+        showSearch: true
+        span: auto
+        valueFrom: default_timezone
+        required: 1
+        type: dropdown
     client_id:
         label: 'Select Client'
         showSearch: true

@@ -75,3 +75,9 @@ v1.0.25:
 v1.0.26:
     - 'Updated table greenpaltform_plumbingpossibilities_appointments'
     - builder_table_update_greenpaltform_plumbingpossibilities_appointments_11.php
+v1.0.27:
+    - 'Created table greenpaltform_plumbingpossibilities_settings'
+    - builder_table_create_greenpaltform_plumbingpossibilities_settings.php
+v1.0.28:
+    - 'Updated table greenpaltform_plumbingpossibilities_appointments'
+    - builder_table_update_greenpaltform_plumbingpossibilities_appointments_12.php

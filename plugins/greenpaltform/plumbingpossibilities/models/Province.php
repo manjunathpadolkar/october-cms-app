@@ -28,4 +28,13 @@ class Province extends Model
      * @var array rules for validation.
      */
     public $rules = [];
+
+    public $belongsTo = [
+        "country" => Country::class
+    ];
+
+    public function getCountryIdOptions()
+    {
+        return Country::lists("name", "id");
+    }
 }

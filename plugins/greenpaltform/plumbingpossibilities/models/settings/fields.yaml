@@ -1,0 +1,11 @@
+fields:
+    key:
+        label: 'Enter Key'
+        span: auto
+        required: 1
+        type: text
+    value:
+        label: 'Enter Value'
+        span: auto
+        required: 1
+        type: text
