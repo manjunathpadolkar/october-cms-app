@@ -1,0 +1,14 @@
+layout = "default"
+subject = "{{ name }} has submitted contact us form - {{ appName|raw }}"
+
+Hi Admin
+
+{{ name }} has submitted contact us form.
+
+{% partial 'panel' body %}
+- Name: `{{ name ?: '' }}`
+- Phone: `{{ (phone ?: '') }}`
+- Email: `{{ (email ?: '') }}`
+- Subject: `{{ (subject ?: '') }}`
+- Message: `{{ (msg ?: '') }}`
+{% endpartial %}

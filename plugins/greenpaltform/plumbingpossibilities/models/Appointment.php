@@ -29,10 +29,6 @@ class Appointment extends Model
         "address" => Address::class
     ];
 
-    public $attributes = [
-        "default_timezone"
-    ];
-
     public function getClientIdOptions()
     {
         return Client::lists("name", "id");

@@ -32,15 +32,15 @@ function onSubmitContactForm()
 
 
 function sendThankYouEmail($data){
-    Mail::send("contact::mail.thank-you", $data, function($message) use($data){
+    Mail::send("greenpaltform.plumbingpossibilities::mail.thank-you-for-contacting-us", $data, function($message) use($data){
         $message->to($data["email"], $data["name"]);
     });
 
 }
 
 function sendContactUsFormSubmittedEmail($data){
-    Mail::send("contact::mail.submitted-to-admin", $data, function($message){
-        $message->to("enter email here", "Admin");
+    Mail::send("greenpaltform.plumbingpossibilities::mail.contact-form-submmited-to-admin", $data, function($message){
+        $message->to("", "Admin");
     });
 }
 ?>
