@@ -11,7 +11,9 @@
         "october/all": "^3.4",
         "pkurg/vesperr-theme": "^1.0",
         "rainlab/editable-plugin": "^1.0",
-        "rainlab/builder-plugin": "^2.0"
+        "rainlab/builder-plugin": "^2.0",
+        "guzzlehttp/guzzle": "^7.8",
+        "vonage/client": "^4.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5|^9.0",

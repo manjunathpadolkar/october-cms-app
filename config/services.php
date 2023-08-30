@@ -30,5 +30,11 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    
+    'vonage' => [
+        'brand_name' => env('VONAGE_BRAND_NAME', ''),
+        'api_key' => env('VONAGE_API_KEY', ''),
+        'api_secret' => env('VONAGE_API_SECRET', ''),
+    ],
 
 ];

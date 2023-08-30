@@ -1,0 +1,13 @@
+layout = "default"
+subject = "Appointment reminder"
+
+Hi {{ assignee_name }}
+
+You've an appointment with {{ client_name }} at {{ date_time }}.
+
+{% partial 'panel' body %}
+- Client: `{{ client_name ?: '' }}`
+- Phone: `{{ client_phone ?: '' }}`
+- Address: `{{ address ?: '' }}
+- Time: `{{ date_time ?: '' }}`
+{% endpartial %}
